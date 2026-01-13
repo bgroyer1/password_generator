@@ -39,12 +39,11 @@ passwordElements.forEach(el => {
       await navigator.clipboard.writeText(password)
       isCopied = true;
       el.textContent = 'Copied!'
-
       setTimeout(() => {
         el.textContent = password
         isCopied = false
       }, 1000)
-    } catch(err) {
+    } catch (err) {
       console.error('Failed to copy:', err)
     }
   })

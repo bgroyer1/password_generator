@@ -169,6 +169,10 @@ header {
   cursor: pointer;
 }
 
+.password_div:hover {
+  opacity: 0.75;
+}
+
 /* Media Queries */
 @media (prefers-reduced-motion: reduce) {
   * {
