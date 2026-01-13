@@ -9,7 +9,7 @@
 :root {
   --btn-color: #10b981;
   --text-accent: #4adf86;
-  --white: white;
+  --white: whitesmoke;
   --text-secondary: #d9d9d9;
   --bg-input: #273549;
   --bg-app: #1f2937;
@@ -130,6 +130,12 @@ video {
   margin-bottom: 2.25rem;
 }
 
+.btn-password:hover,
+.btn-password:focus {
+  background-color: var(--white);
+  color: var(--btn-color)
+}
+
 /* Layout */
 
 header {
@@ -140,7 +146,19 @@ header {
   margin-top: 3.25rem;
   margin-bottom: 2.25rem;
   border-bottom: var(--border-color) 2px solid;
+}
 
+.passwords_section {
+  display: flex;
+  min-height: 2.5rem;
+  gap: 1.5em;
+}
+
+.password_div {
+  border-radius: 6px;
+  min-height: 2.5em;
+  min-width: 13.25em;
+  background-color: var(--bg-input);
 }
 
 /* Media Queries */
