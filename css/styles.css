@@ -158,13 +158,14 @@ header {
   flex-grow: 1;
   border-radius: 6px;
   min-height: 2.5em;
-  min-width: 13.25em;
+  min-width: 50%;
   background-color: var(--bg-input);
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--text-password);
   font-weight: 500;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 
@@ -177,7 +178,7 @@ header {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   html {
     font-size: 75%;
   }

@@ -26,4 +26,5 @@ function generatePassword() {
 generatePasswordBtn.addEventListener('click', () => {
   document.querySelector("#password_1").textContent = generatePassword();
   document.querySelector("#password_2").textContent = generatePassword();
+  generatePasswordBtn.blur();
 })
