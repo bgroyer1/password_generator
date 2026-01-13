@@ -30,7 +30,6 @@ body {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: var(--bg-app);
-  font-size: 1rem;
   margin: 0;
   padding: 0 3.25rem;
   color: var(--white);
@@ -132,8 +131,9 @@ video {
 
 .btn-password:hover,
 .btn-password:focus {
-  background-color: var(--white);
-  color: var(--btn-color)
+  background-color: #059669;
+  box-shadow: 0 8px 20px rgba(5,150,105,0.18);
+  transform: translateY(-1px);
 }
 
 /* Layout */
@@ -155,10 +155,17 @@ header {
 }
 
 .password_div {
+  flex-grow: 1;
   border-radius: 6px;
   min-height: 2.5em;
   min-width: 13.25em;
   background-color: var(--bg-input);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-password);
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /* Media Queries */
@@ -166,5 +173,16 @@ header {
   * {
     animation-duration: 0s !important;
     transition-duration: 0s !important;
+  }
+}
+
+
+@media (max-width: 500px) {
+  html {
+    font-size: 75%;
+  }
+
+  .passwords_section {
+    flex-direction: column;
   }
 }
