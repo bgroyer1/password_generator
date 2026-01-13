@@ -1,0 +1,95 @@
+/* Boilerplate */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #10B981;
+  --white: white;
+  --text-secondary: #D9D9D9;
+  --bg-input: #273549;
+  --bg-app: #1F2937;
+}
+
+html {
+  scroll-behavior: smooth; /* nice smooth scrolling */
+  font-size: 100%;          /* makes rem predictable */
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--bg-app);
+  font-size: 1rem;
+  margin: 0;
+  color: var(--white);
+  min-height: 100dvh;
+}
+
+.img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none !important
+}
+
+
+/* Media Queries */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
