@@ -1,30 +1,38 @@
 /* Boilerplate */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 :root {
-  --accent: #10B981;
+  --btn-color: #10b981;
+  --text-accent: #4adf86;
   --white: white;
-  --text-secondary: #D9D9D9;
+  --text-secondary: #d9d9d9;
   --bg-input: #273549;
-  --bg-app: #1F2937;
+  --bg-app: #1f2937;
+  --text-password: #55f991;
+  --border-color: #2f3e53;
 }
 
 html {
   scroll-behavior: smooth; /* nice smooth scrolling */
-  font-size: 100%;          /* makes rem predictable */
+  font-size: 100%; /* makes rem predictable */
 }
 
 body {
+  font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: var(--bg-app);
   font-size: 1rem;
   margin: 0;
+  padding: 0 3.25rem;
   color: var(--white);
   min-height: 100dvh;
 }
@@ -36,7 +44,13 @@ body {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -63,6 +77,7 @@ select {
 
 button {
   cursor: pointer;
+  background-color: var(--btn-color);
 }
 
 ul,
@@ -81,10 +96,52 @@ video {
   height: auto;
 }
 
+/* Utility Classes */
+
 .hidden {
-  display: none !important
+  display: none !important;
 }
 
+.green-text {
+  color: var(--text-accent);
+}
+
+.grey-text {
+  color: var(--text-secondary);
+}
+
+.title {
+  letter-spacing: -2.5%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Karla", sans-serif;
+}
+
+.subtitle {
+  font-size: 1.75rem;
+}
+
+/* Buttons */
+
+.btn-password {
+  font-weight: 500;
+  padding: 0.75em 1em;
+  border-radius: 6px;
+  margin-bottom: 2.25rem;
+}
+
+/* Layout */
+
+header {
+  margin-top: 5rem;
+}
+
+.btn-div {
+  margin-top: 3.25rem;
+  margin-bottom: 2.25rem;
+  border-bottom: var(--border-color) 2px solid;
+
+}
 
 /* Media Queries */
 @media (prefers-reduced-motion: reduce) {
